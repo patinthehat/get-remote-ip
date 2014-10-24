@@ -7,7 +7,9 @@
 
 ### Usage ###
 
-```<?php
+```
+#!/usr/bin/php
+<?php
 
 define('DATA_PATH',             'data');
 define('HOSTS_FILENAME',        DATA_PATH.'/hosts.conf');
@@ -28,7 +30,11 @@ This host should return the client's external ip address, preferably as plain te
   
 By default, `get-external-ip` comes with multiple hosts already configured.
 
+#### Example ####
+An example host is <a href="http://echo.tzo.com">echo.tzo.com</a>, which outputs the client's
+external ip address (there is other text as well which is filtered out with regex.)
+
 ---
 
 ### License ###
-`get-remote-ip` is licensed under the MIT License.
+`get-remote-ip` is licensed under the <a href="LICENSE-MIT">MIT License</a>.
