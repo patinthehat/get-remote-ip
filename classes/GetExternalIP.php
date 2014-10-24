@@ -9,8 +9,6 @@
 namespace GetExternalIP;
 
 
-dl('curl.so');
-
 define('APP_TITLE',           'GetExternalIP');
 define('DEFAULT_IP',          "127.0.0.1");
 define('DEFAULT_HOST',        "http://echo.tzo.com");
@@ -103,7 +101,7 @@ Class GetExternalIP {
   }
 
   function getExternalIpFromHost($host) {
-    echo "[debug] host = $host\n";
+    //echo "[debug] host = $host\n";
     $re = '/([0-9]{1,3}\.{1}){4}/';
     $re = '/[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}(\.[0-9]{1,3}){0,1}/';
     $html = $this->executeCURL($host, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:25.0) Gecko/20100101 Firefox/25.0");
