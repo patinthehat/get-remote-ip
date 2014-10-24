@@ -7,8 +7,8 @@
 
 ### Usage ###
 
-```
-#!/usr/bin/php
+***As PHP:***
+```php
 <?php
 
 define('DATA_PATH',             'data');
@@ -21,6 +21,13 @@ $externip = new \GetExternalIP\GetExternalIP(HOSTS_FILENAME);
 //get and echo the external ip 
 echo $externip->getExternalIP() . PHP_EOL;    
 ```
+
+---
+
+*** As a Bash script: ***
+
+`$ get-remote-ip.sh`
+
 ---
 
 ### Configuration ###
@@ -30,7 +37,7 @@ This host should return the client's external ip address, preferably as plain te
   
 By default, `get-external-ip` comes with multiple hosts already configured.
 
-#### Example ####
+#### ***Example*** ####
 An example host is <a href="http://echo.tzo.com">echo.tzo.com</a>, which outputs the client's
 external ip address (there is other text as well which is filtered out with regex.)
 
