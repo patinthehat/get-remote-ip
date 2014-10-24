@@ -30,7 +30,7 @@ echo $externip->getExternalIP() . PHP_EOL;
 
 *** As a Bash script: ***
 
-`$ <a href="get-remote-ip.sh">get-remote-ip.sh</a>`
+`$ get-remote-ip.sh`
 
 ---
 
