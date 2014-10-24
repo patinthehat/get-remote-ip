@@ -7,7 +7,7 @@
 
 ### Usage ###
 
-`<?php
+```<?php
 
 define('DATA_PATH',             'data');
 define('HOSTS_FILENAME',        DATA_PATH.'/hosts.conf');
@@ -18,7 +18,7 @@ include('classes/GetExternalIP.php');
 $externip = new \GetExternalIP\GetExternalIP(HOSTS_FILENAME); 
 //get and echo the external ip 
 echo $externip->getExternalIP() . PHP_EOL;    
-`
+```
 ---
 
 ### Configuration ###
