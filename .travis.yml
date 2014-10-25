@@ -1,0 +1,43 @@
+notifications:
+  email:
+    recipients:
+      - trick.developer@gmail.com
+    on_success: change
+    on_failure: change
+
+
+language: php
+php:
+  - 5.5
+  - 5.4
+  - 5.3
+
+before_script:
+ - composer install
+ 
+after_script:
+
+before_install:
+  - sudo apt-get update
+
+install:
+  - sudo apt-get install realpath
+  - sudo apt-get install php5-cli php5-common
+#  - sudo apt-get install python
+  - sudo apt-get install phpunit
+#  - sudo pip install iniparse
+
+cache: 
+  bundler: true
+  apt: true
+
+env:
+  - TESTNAME=get-remote-ip-tests
+
+script: 
+  - tests/run-tests.sh
+
+matrix:
+  fast_finish: true
+
+
